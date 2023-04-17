@@ -1,0 +1,153 @@
+.App {
+    background-image: url('/public/img/bg-header.png');
+}
+.portal {
+    position: relative;
+    top: -150px;
+    left: 160px;
+}
+
+.title {
+    position: relative;
+    top: -150px;
+    left: 50px;
+}
+
+.portal img { 
+    animation: girar 10s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    } 
+    to{
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+
+.form input {
+    background: none;
+    padding: 35px;
+    outline: none;
+    height: 50px;
+    border: 2px solid #8EFF8B;
+    color: #FBFBFB;
+}
+
+.form input::placeholder {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    background: none;
+    color: #FBFBFB;
+}
+
+.form button {
+    background: rgba(142, 255, 139, 0.5);
+    border: 2px solid #8EFF8B;
+    border-left: none;
+    width: 215px;
+    height: 75px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FBFBFB;
+}
+
+.form button:hover {
+    background: #8EFF8B;
+    color: black;
+}
+
+.form button i {
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 23px;
+}
+
+
+.card {
+    border: 2px solid #8EFF8B;
+}
+
+.card-y {
+    border-bottom: 2px solid #8EFF8B;
+}
+
+@media (min-width: 755px) {
+    .card-responsive {
+        width: 150px;
+    }
+}
+
+@media (min-width: 511px) {
+    .portal {
+        display: flex;
+        justify-content: center;
+        left: 270px;
+    }
+}
+
+@media (min-width: 380px){
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 511px) and (max-width: 680px){
+    .card-responsive {
+        width: 120px;
+    }
+}
+
+@media (min-width: 998px){
+    .portal {
+        top: 40px;
+        left: 500px;
+        height: 250px;
+        transform: scalex(4);
+        padding-bottom: 20px;
+    }
+    .portal-title {
+        padding-bottom: 35px;
+    }    
+}
+
+@media (max-width: 998px){
+    .title {
+        top: -400px;
+        left: 40px;
+    }
+}
+
+@media (max-width: 529px){
+    .flex-responsive {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 524px){
+    .title {
+        padding-left: 20px;
+        padding-top: 20px;
+        top: -400px;
+        left: -20px;
+    }
+    .form input {
+        width: 150px;
+        height: 30px;
+    }
+    .form button {
+        width: 70px;
+    }
+}
+
+@media (max-width: 388px) {
+    .title {
+        top: -350px
+    }
+}
