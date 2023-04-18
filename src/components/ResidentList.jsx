@@ -8,7 +8,7 @@ const ResidentList = ({ location }) => {
 
     const arrayPages = []
     const quantityPages = Math.ceil(location?.residents.length / RESIDENTS_PER_PAGE)
-    for (let i = 1; i < quantityPages; i++){
+    for (let i = 1; i <= quantityPages; i++){
       arrayPages.push(i)
     }
     
@@ -22,7 +22,7 @@ const ResidentList = ({ location }) => {
     },[location])
   
   return (
-    <>
+    <div>
       <section className='p-4 grid gap-6 auto-rows-auto 
       grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))] max-w-[1000px]
       mx-auto'>
@@ -38,7 +38,7 @@ const ResidentList = ({ location }) => {
           ${page === currentPage && "bg-green-700 text-white font-bold"}`} key={page}>{page}</li>)
         }
       </ul>
-    </>
+    </div>
   )
 }
 

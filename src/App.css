@@ -77,6 +77,11 @@
     border-bottom: 2px solid #8EFF8B;
 }
 
+.scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 @media (min-width: 755px) {
     .card-responsive {
         width: 150px;
@@ -105,16 +110,10 @@
 }
 
 @media (min-width: 998px){
-    .portal {
-        top: 40px;
-        left: 500px;
-        height: 250px;
-        transform: scalex(4);
-        padding-bottom: 20px;
+    .title {
+        top: -400px;
+        left: 40px;
     }
-    .portal-title {
-        padding-bottom: 35px;
-    }    
 }
 
 @media (max-width: 998px){

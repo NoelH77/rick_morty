@@ -3,7 +3,7 @@ import React from 'react'
 const Portal = () => {
   return (
     <section >
-        <div className='portal-title'>
+        <div className='portal-title h-[400px]'>
           <div className='portal'>
             <img src="/img/pt.png" alt="" />
           </div>
